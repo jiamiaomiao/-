@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suitename">
+
+       <test name="runall">
+
+           <classes>
+               <class name="com.course.testng.group.groupOnClass1"></class>
+               <class name="com.course.testng.group.groupOnClass2"></class>
+               <class name="com.course.testng.group.groupOnClass3"></class>
+
+           </classes>
+       </test>
+
+    <test name="onlyRun">
+        <groups>
+            <run>
+                <include name="stu"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.testng.group.groupOnClass1"></class>
+            <class name="com.course.testng.group.groupOnClass2"></class>
+            <class name="com.course.testng.group.groupOnClass3"></class>
+
+        </classes>
+
+    </test>
+</suite>
